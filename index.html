@@ -213,7 +213,7 @@
                       <img src="./static/images/CrossDomainResults.png" />
                       <br />
                     </div>
-        
+                    <br>
                     <p>
                         To demonstrate the generalizability of our method across different  domains, we provide editing results on artistic paintings, cats and cars. 
                         As demonstrated from in the editing results, our method is able to learn and apply latent directions from various domains using a single diffusion model.
@@ -230,10 +230,12 @@
                 <div class="column is-12">
                   <h2 class="title is-3">Composition Results</h2>
                     <br>
-                  <p class="subtitle has-text-justified">
-                    Our method can find domain-specific edits that can be composed either a) intra-domain where edits from the same domain can be applied simultaneously, b) cross-domain, where edits from different domains can be combined and applied simultaneously. 
-                    </p>
-        
+                    <div class="has-text-justified">
+                      <p>
+                        Since NoiseCLR can learn latent directions from different domains within the shared latent space of Stable Diffusion, it is capable of executing both intra-domain and inter-domain edits.
+                      </p>
+                      <br>
+                    </div>
                   <div class="content has-text-justified">
                     <!--
                     <p>
@@ -244,6 +246,9 @@
                       <img src="./static/images/multi_edit.png" />
                       <br />
                     </div>
+                    <p class="has-text-justified">
+                      Our method can find domain-specific edits that can be composed either a) intra-domain where edits from the same domain can be applied simultaneously, b) cross-domain, where edits from different domains can be combined and applied simultaneously. 
+                      </p>
                   </div>
                 </div>
               </div>
